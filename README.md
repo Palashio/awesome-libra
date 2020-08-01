@@ -19,3 +19,10 @@ in progress.....
 
 [Machine Learning in One-Minute with Libra](https://medium.com/@pranavnt5/machine-learning-in-one-minute-with-libra-783dcd393f7f) by Pranav Teegavarapu.
 
+## Webinars
+
+[Become a machine learning expert](https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/) at Cloud Computing, AI, Big Data. (Almost filled up over 150+ signups).
+
+[Become a machine learning expert in 45 minutes](https://zmurl.com/hyphora-libra) at Hyphora
+
+
