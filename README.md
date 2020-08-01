@@ -1,6 +1,11 @@
 # awesome-libra
 A curated list of all things related to libra.
 
+## Video Tutorials
+[Machine Learning in One Line of Code](https://www.youtube.com/watch?v=N_T_ljj5vc4) by Ahmad Bazzi.
+
+[Introduction to Machine Learning using Libra](https://www.youtube.com/watch?v=kQrIrm1XKc0&t=4s) by Palash Shah.
+
 ## Articles
 [Libra: A Python tool that Automates Machine Learning Process in a Few Lines of Code](https://www.marktechpost.com/2020/07/28/libra-a-python-tool-that-automates-machine-learning-process-in-a-few-lines-of-code/) by marktechpost. 
 
