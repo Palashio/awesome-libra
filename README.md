@@ -1,7 +1,7 @@
 # awesome-libra
 A curated list of all things related to libra.
 
-in progress.....
+These are only original pieces of media around libra. Re-writes, reshares, and blog features are not included.
 
 ## Video Tutorials
 [Machine Learning in One Line of Code](https://www.youtube.com/watch?v=N_T_ljj5vc4) by Ahmad Bazzi.
