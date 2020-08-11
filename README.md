@@ -21,7 +21,7 @@ in progress.....
 
 ## Webinars
 
-[Become a machine learning expert](https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/) at Cloud Computing, AI, Big Data. (Almost filled up over 150+ signups).
+[Become a machine learning expert](https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/) at Cloud Computing, AI, Big Data. (Almost filled up over 250+ signups).
 
 [Become a machine learning expert in 45 minutes](https://zmurl.com/hyphora-libra) at Hyphora
 
