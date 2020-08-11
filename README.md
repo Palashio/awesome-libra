@@ -25,4 +25,8 @@ in progress.....
 
 [Become a machine learning expert in 45 minutes](https://zmurl.com/hyphora-libra) at Hyphora
 
+## Other
+
+[#1 Trending Project on Made with ML in August](https://madewithml.com/projects/2122/libra/)
+
 
