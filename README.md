@@ -8,6 +8,8 @@ These are only original pieces of media around libra. Re-writes, reshares, and b
 
 [Introduction to Machine Learning using Libra](https://www.youtube.com/watch?v=kQrIrm1XKc0&t=4s) by Palash Shah.
 
+[Libra - Your Data Talks Meetup](https://www.youtube.com/watch?v=2149kjp97KI&t=407s) by Palash Shah
+
 ## Articles
 [Libra: A Python tool that Automates Machine Learning Process in a Few Lines of Code](https://www.marktechpost.com/2020/07/28/libra-a-python-tool-that-automates-machine-learning-process-in-a-few-lines-of-code/) by marktechpost. 
 
