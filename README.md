@@ -23,6 +23,8 @@ These are only original pieces of media around libra. Re-writes, reshares, and b
 
 [The Ultimate Out-of-the-box Automated Python Model Selection Methods](https://towardsdatascience.com/the-ultimate-out-of-the-box-automated-python-model-selection-methods-f2188472d2a) by Philippe Bouaziz, PhD
 
+[AutoML: the Good, the Bad, and the Ugly](https://www.compris.xyz/post/automl) by Vagif Aliyev
+
 ## Webinars
 
 [Become a machine learning expert](https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/) at Cloud Computing, AI, Big Data. (Almost filled up over 250+ signups).
