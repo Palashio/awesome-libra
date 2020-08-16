@@ -21,9 +21,11 @@ These are only original pieces of media around libra. Re-writes, reshares, and b
 
 [Machine Learning in One-Minute with Libra](https://medium.com/@pranavnt5/machine-learning-in-one-minute-with-libra-783dcd393f7f) by Pranav Teegavarapu.
 
-[The Ultimate Out-of-the-box Automated Python Model Selection Methods](https://towardsdatascience.com/the-ultimate-out-of-the-box-automated-python-model-selection-methods-f2188472d2a) by Philippe Bouaziz, PhD
+[The Ultimate Out-of-the-box Automated Python Model Selection Methods](https://towardsdatascience.com/the-ultimate-out-of-the-box-automated-python-model-selection-methods-f2188472d2a) by Philippe Bouaziz, PhD.
 
 [AutoML: the Good, the Bad, and the Ugly](https://www.compris.xyz/post/automl) by Vagif Aliyev
+
+[Create a neural network in one-line of code](https://www.machinelearningmadeeasy.com/libra) by Siddhant Chadha.
 
 ## Webinars
 
