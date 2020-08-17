@@ -27,6 +27,8 @@ These are only original pieces of media around libra. Re-writes, reshares, and b
 
 [Create a neural network in one-line of code](https://www.machinelearningmadeeasy.com/libra) by Siddhant Chadha.
 
+[Libra : Fully Automated Machine Learning in One-Liners](https://medium.com/@ravi07/libra-fully-automated-machine-learning-in-one-liners-27ca352339ed) by Ravi.
+
 ## Webinars
 
 [Become a machine learning expert](https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/) at Cloud Computing, AI, Big Data. (Almost filled up over 250+ signups).
