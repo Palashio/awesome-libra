@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Libra - Interactive Demo</title>
+    <meta name="description" content="A curated list of all things related to libra - ergonomic machine learning for everyone">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-balance-scale"></i> Awesome Libra</h1>
+                    <p>Ergonomic machine learning for everyone</p>
+                </div>
+                <div class="header-actions">
+                    <a href="https://github.com/Palashio/libra" target="_blank" class="btn btn-primary">
+                        <i class="fab fa-github"></i> View Libra
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="nav-content">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search resources..." class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+                <div class="category-tabs">
+                    <button class="tab-btn active" data-category="all">All</button>
+                    <button class="tab-btn" data-category="videos">Video Tutorials</button>
+                    <button class="tab-btn" data-category="articles">Articles</button>
+                    <button class="tab-btn" data-category="webinars">Webinars</button>
+                    <button class="tab-btn" data-category="other">Other</button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h2>A curated list of all things related to libra</h2>
+                <p>These are only original pieces of media around libra. Re-writes, reshares, and blog features are not included.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number" id="totalResources">16</span>
+                        <span class="stat-label">Total Resources</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Categories</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Resources Grid -->
+            <section class="resources-section">
+                <div class="resources-grid" id="resourcesGrid">
+                    <!-- Resources will be dynamically loaded here -->
+                </div>
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No resources found</h3>
+                    <p>Try adjusting your search terms or category filter.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Awesome Libra. Built with ❤️ for the machine learning community.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
