@@ -186,7 +186,8 @@ print(f"Total models trained: {len(newClient.models)}")
 
 # Access specific model performance metrics
 for model_name in newClient.models.keys():
-    print(f"
+    print(f"\n{model_name} model information available")
+    print(f"Keys: {list(newClient.models[model_name].keys())}")
 ```
 
 ## Video Tutorials
