@@ -3,6 +3,23 @@ A curated list of all things related to libra.
 
 These are only original pieces of media around libra. Re-writes, reshares, and blog features are not included.
 
+## Installation & Prerequisites
+
+### Installation
+
+Install the latest release version:
+
+```bash
+pip install -U libra
+```
+
+### Prerequisites
+
+- Python 3.6 or higher
+- pandas for data manipulation
+- scikit-learn for machine learning algorithms
+- TensorFlow/Keras for neural networks (automatically installed with libra)
+
 ## Interactive Python Examples
 
 Libra is an ergonomic machine learning library that automates the entire ML process with just a few lines of code. Below are comprehensive examples showing how to use Libra's core functionality.
@@ -144,6 +161,7 @@ print(f"Available information: {list(results.keys())}")
 ## Other
 
 [#1 Trending Project on Made with ML in August](https://madewithml.com/projects/2122/libra/)
+
 
 
 
