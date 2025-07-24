@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libra Interactive Demo - Machine Learning in One Line</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Libra Interactive Demo</h1>
+            <p class="subtitle">Experience Machine Learning in One Line of Code</p>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="intro">
+                <h2>Welcome to Libra</h2>
+                <p>Libra is a Python library that enables automated machine learning with simple one-line APIs. 
+                   Explore the power of automated ML by trying out different tasks below.</p>
+            </section>
+
+            <!-- Classification Demo Section -->
+            <section class="demo-section" id="classification">
+                <div class="section-header">
+                    <h3>Classification</h3>
+                    <p>Predict categories or classes from your data</p>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="input-panel">
+                        <h4>Input Data</h4>
+                        <div class="data-options">
+                            <button class="load-sample-btn" data-task="classification">Load Sample Dataset</button>
+                            <span class="or-text">or</span>
+                            <label for="classification-data" class="file-label">Upload CSV</label>
+                            <input type="file" id="classification-data" accept=".csv" style="display: none;">
+                        </div>
+                        <textarea class="data-input" id="classification-input" placeholder="Paste your CSV data here or load a sample dataset..."></textarea>
+                        <button class="run-demo-btn" data-task="classification">Run Classification</button>
+                    </div>
+                    
+                    <div class="output-panel">
+                        <h4>Libra Code</h4>
+                        <div class="code-display">
+                            <pre><code class="language-python" id="classification-code">
+# Your Libra code will appear here
+                            </code></pre>
+                        </div>
+                        <h4>Results</h4>
+                        <div class="results-display" id="classification-results">
+                            <p class="placeholder">Results will appear here after running the demo</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Regression Demo Section -->
+            <section class="demo-section" id="regression">
+                <div class="section-header">
+                    <h3>Regression</h3>
+                    <p>Predict continuous numerical values from your data</p>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="input-panel">
+                        <h4>Input Data</h4>
+                        <div class="data-options">
+                            <button class="load-sample-btn" data-task="regression">Load Sample Dataset</button>
+                            <span class="or-text">or</span>
+                            <label for="regression-data" class="file-label">Upload CSV</label>
+                            <input type="file" id="regression-data" accept=".csv" style="display: none;">
+                        </div>
+                        <textarea class="data-input" id="regression-input" placeholder="Paste your CSV data here or load a sample dataset..."></textarea>
+                        <button class="run-demo-btn" data-task="regression">Run Regression</button>
+                    </div>
+                    
+                    <div class="output-panel">
+                        <h4>Libra Code</h4>
+                        <div class="code-display">
+                            <pre><code class="language-python" id="regression-code">
+# Your Libra code will appear here
+                            </code></pre>
+                        </div>
+                        <h4>Results</h4>
+                        <div class="results-display" id="regression-results">
+                            <p class="placeholder">Results will appear here after running the demo</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Neural Networks Demo Section -->
+            <section class="demo-section" id="neural-networks">
+                <div class="section-header">
+                    <h3>Neural Networks</h3>
+                    <p>Build deep learning models with automated architecture selection</p>
+                </div>
+                
+                <div class="demo-content">
+                    <div class="input-panel">
+                        <h4>Input Data</h4>
+                        <div class="data-options">
+                            <button class="load-sample-btn" data-task="neural-networks">Load Sample Dataset</button>
+                            <span class="or-text">or</span>
+                            <label for="neural-data" class="file-label">Upload CSV</label>
+                            <input type="file" id="neural-data" accept=".csv" style="display: none;">
+                        </div>
+                        <textarea class="data-input" id="neural-input" placeholder="Paste your CSV data here or load a sample dataset..."></textarea>
+                        <button class="run-demo-btn" data-task="neural-networks">Run Neural Network</button>
+                    </div>
+                    
+                    <div class="output-panel">
+                        <h4>Libra Code</h4>
+                        <div class="code-display">
+                            <pre><code class="language-python" id="neural-code">
+# Your Libra code will appear here
