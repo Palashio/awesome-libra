@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Libra - Interactive Tutorial</title>
+    <link rel="stylesheet" href="tutorial.css">
+</head>
+<body>
+    <div class="tutorial-container">
+        <!-- Header -->
+        <header class="tutorial-header">
+            <h1>Awesome Libra Interactive Tutorial</h1>
+            <p class="subtitle">Discover the world of automated machine learning with Libra</p>
+            
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <span class="progress-text" id="progressText">Step 1 of 5</span>
+            </div>
+        </header>
+
+        <!-- Navigation Controls -->
+        <nav class="tutorial-nav">
+            <button class="nav-btn" id="prevBtn" disabled>← Previous</button>
+            <div class="step-indicators" id="stepIndicators">
+                <span class="step-dot active" data-step="0"></span>
+                <span class="step-dot" data-step="1"></span>
+                <span class="step-dot" data-step="2"></span>
+                <span class="step-dot" data-step="3"></span>
+                <span class="step-dot" data-step="4"></span>
+            </div>
+            <button class="nav-btn" id="nextBtn">Next →</button>
+        </nav>
+
+        <!-- Tutorial Content -->
+        <main class="tutorial-content">
+            <!-- Step 0: Introduction -->
+            <section class="tutorial-step active" data-step="0">
+                <div class="step-header">
+                    <h2>Welcome to Awesome Libra</h2>
+                    <span class="step-badge">Introduction</span>
+                </div>
+                <div class="step-content">
+                    <div class="intro-card">
+                        <h3>What is Awesome Libra?</h3>
+                        <p>A curated list of all things related to <strong>Libra</strong> - the Python tool that automates machine learning processes in just a few lines of code.</p>
+                        <div class="highlight-box">
+                            <p><strong>Note:</strong> These are only original pieces of media around Libra. Re-writes, reshares, and blog features are not included.</p>
+                        </div>
+                        <div class="intro-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Video Tutorials</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10</span>
+                                <span class="stat-label">Articles</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2</span>
+                                <span class="stat-label">Webinars</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1</span>
+                                <span class="stat-label">Other Resource</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 1: Video Tutorials -->
+            <section class="tutorial-step" data-step="1">
+                <div class="step-header">
+                    <h2>Video Tutorials</h2>
+                    <span class="step-badge">Watch & Learn</span>
+                </div>
+                <div class="step-content">
+                    <p class="section-intro">Start your Libra journey with these comprehensive video tutorials that demonstrate machine learning automation in action.</p>
+                    <div class="resource-grid">
+                        <div class="resource-card video-card" data-type="video">
+                            <div class="resource-header">
+                                <span class="resource-type">YouTube Video</span>
+                                <button class="bookmark-btn" data-resource="video-1">⭐</button>
+                            </div>
+                            <h3>Machine Learning in One Line of Code</h3>
+                            <p class="resource-author">by Ahmad Bazzi</p>
+                            <p class="resource-description">Learn how to implement machine learning models with just a single line of code using Libra.</p>
+                            <a href="https://www.youtube.com/watch?v=N_T_ljj5vc4" target="_blank" class="resource-link">Watch Video</a>
+                        </div>
+                        
+                        <div class="resource-card video-card" data-type="video">
+                            <div class="resource-header">
+                                <span class="resource-type">YouTube Video</span>
+                                <button class="bookmark-btn" data-resource="video-2">⭐</button>
+                            </div>
+                            <h3>Introduction to Machine Learning using Libra</h3>
+                            <p class="resource-author">by Palash Shah</p>
+                            <p class="resource-description">A comprehensive introduction to getting started with machine learning using the Libra library.</p>
+                            <a href="https://www.youtube.com/watch?v=kQrIrm1XKc0&t=4s" target="_blank" class="resource-link">Watch Video</a>
+                        </div>
+                        
+                        <div class="resource-card video-card" data-type="video">
+                            <div class="resource-header">
+                                <span class="resource-type">YouTube Video</span>
+                                <button class="bookmark-btn" data-resource="video-3">⭐</button>
+                            </div>
+                            <h3>Libra - Your Data Talks Meetup</h3>
+                            <p class="resource-author">by Palash Shah</p>
+                            <p class="resource-description">A meetup presentation showcasing Libra's capabilities for automated machine learning.</p>
+                            <a href="https://www.youtube.com/watch?v=2149kjp97KI&t=407s" target="_blank" class="resource-link">Watch Video</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 2: Articles -->
+            <section class="tutorial-step" data-step="2">
+                <div class="step-header">
+                    <h2>Articles</h2>
+                    <span class="step-badge">Read & Understand</span>
+                </div>
+                <div class="step-content">
+                    <p class="section-intro">Dive deeper into Libra with these insightful articles covering various aspects of automated machine learning.</p>
+                    <div class="filter-controls">
+                        <button class="filter-btn active" data-filter="all">All Articles</button>
+                        <button class="filter-btn" data-filter="tutorial">Tutorials</button>
+                        <button class="filter-btn" data-filter="comparison">Comparisons</button>
+                        <button class="filter-btn" data-filter="automation">Automation</button>
+                    </div>
+                    <div class="resource-list">
+                        <div class="resource-item article-item" data-type="tutorial">
+                            <div class="resource-header">
+                                <span class="resource-type">MarkTechPost</span>
+                                <button class="bookmark-btn" data-resource="article-1">⭐</button>
+                            </div>
+                            <h3>Libra: A Python tool that Automates Machine Learning Process in a Few Lines of Code</h3>
+                            <p class="resource-author">by marktechpost</p>
+                            <a href="https://www.marktechpost.com/2020/07/28/libra-a-python-tool-that-automates-machine-learning-process-in-a-few-lines-of-code/" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="tutorial">
+                            <div class="resource-header">
+                                <span class="resource-type">Towards Data Science</span>
+                                <button class="bookmark-btn" data-resource="article-2">⭐</button>
+                            </div>
+                            <h3>One liner Machine learning and Deep Learning using Libra</h3>
+                            <p class="resource-author">by Ali Aryan</p>
+                            <a href="https://towardsdatascience.com/machine-learning-and-deep-learning-in-one-liner-using-libra-7eef4023618f" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="tutorial">
+                            <div class="resource-header">
+                                <span class="resource-type">Towards Data Science</span>
+                                <button class="bookmark-btn" data-resource="article-3">⭐</button>
+                            </div>
+                            <h3>Create a complex Machine Learning model in one line with Libra</h3>
+                            <p class="resource-author">by Cornellius Yudha Wijaya</p>
+                            <a href="https://towardsdatascience.com/create-a-complex-machine-learning-model-in-one-line-with-libra-a253e05d15a1" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="automation">
+                            <div class="resource-header">
+                                <span class="resource-type">Medium</span>
+                                <button class="bookmark-btn" data-resource="article-4">⭐</button>
+                            </div>
+                            <h3>Fully Automated Machine Learning in One-Liners</h3>
+                            <p class="resource-author">by Gagandeep Singh</p>
+                            <a href="https://medium.com/@gagan.2492/fully-automated-machine-learning-in-one-liners-5925ba994b48" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="tutorial">
+                            <div class="resource-header">
+                                <span class="resource-type">Medium</span>
+                                <button class="bookmark-btn" data-resource="article-5">⭐</button>
+                            </div>
+                            <h3>Machine Learning in One-Minute with Libra</h3>
+                            <p class="resource-author">by Pranav Teegavarapu</p>
+                            <a href="https://medium.com/@pranavnt5/machine-learning-in-one-minute-with-libra-783dcd393f7f" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="automation">
+                            <div class="resource-header">
+                                <span class="resource-type">Towards Data Science</span>
+                                <button class="bookmark-btn" data-resource="article-6">⭐</button>
+                            </div>
+                            <h3>The Ultimate Out-of-the-box Automated Python Model Selection Methods</h3>
+                            <p class="resource-author">by Philippe Bouaziz, PhD</p>
+                            <a href="https://towardsdatascience.com/the-ultimate-out-of-the-box-automated-python-model-selection-methods-f2188472d2a" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="comparison">
+                            <div class="resource-header">
+                                <span class="resource-type">Compris</span>
+                                <button class="bookmark-btn" data-resource="article-7">⭐</button>
+                            </div>
+                            <h3>AutoML: the Good, the Bad, and the Ugly</h3>
+                            <p class="resource-author">by Vagif Aliyev</p>
+                            <a href="https://www.compris.xyz/post/automl" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="tutorial">
+                            <div class="resource-header">
+                                <span class="resource-type">Machine Learning Made Easy</span>
+                                <button class="bookmark-btn" data-resource="article-8">⭐</button>
+                            </div>
+                            <h3>Create a neural network in one-line of code</h3>
+                            <p class="resource-author">by Siddhant Chadha</p>
+                            <a href="https://www.machinelearningmadeeasy.com/libra" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="automation">
+                            <div class="resource-header">
+                                <span class="resource-type">Medium</span>
+                                <button class="bookmark-btn" data-resource="article-9">⭐</button>
+                            </div>
+                            <h3>Libra : Fully Automated Machine Learning in One-Liners</h3>
+                            <p class="resource-author">by Ravi</p>
+                            <a href="https://medium.com/@ravi07/libra-fully-automated-machine-learning-in-one-liners-27ca352339ed" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                        
+                        <div class="resource-item article-item" data-type="comparison">
+                            <div class="resource-header">
+                                <span class="resource-type">Towards Data Science</span>
+                                <button class="bookmark-btn" data-resource="article-10">⭐</button>
+                            </div>
+                            <h3>Scikit-learn, TensorFlow, PyTorch, Keras… but what about Libra?</h3>
+                            <p class="resource-author">by Ugo Loobuyck</p>
+                            <a href="https://towardsdatascience.com/scikit-learn-tensorflow-pytorch-keras-but-what-about-libra-a5102c2d834d" target="_blank" class="resource-link">Read Article</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 3: Webinars -->
+            <section class="tutorial-step" data-step="3">
+                <div class="step-header">
+                    <h2>Webinars</h2>
+                    <span class="step-badge">Interactive Learning</span>
+                </div>
+                <div class="step-content">
+                    <p class="section-intro">Join live learning sessions and interactive webinars to master Libra with expert guidance.</p>
+                    <div class="resource-grid">
+                        <div class="resource-card webinar-card" data-type="webinar">
+                            <div class="resource-header">
+                                <span class="resource-type">Meetup Event</span>
+                                <button class="bookmark-btn" data-resource="webinar-1">⭐</button>
+                            </div>
+                            <h3>Become a machine learning expert</h3>
+                            <p class="resource-author">at Cloud Computing, AI, Big Data</p>
+                            <p class="resource-description">Join this popular meetup with 250+ signups to become a machine learning expert using Libra.</p>
+                            <div class="webinar-status">
+                                <span class="status-badge popular">Popular Event</span>
+                            </div>
+                            <a href="https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/" target="_blank" class="resource-link">View Event</a>
+                        </div>
+                        
+                        <div class="resource-card webinar-card" data-type="webinar">
+                            <div class="resource-header">
+                                <span class="resource-type">Hyphora Event</span>
+                                <button class="bookmark-btn" data-resource="webinar-2">⭐</button>
+                            </div>
+                            <h3>Become a machine learning expert in 45 minutes</h3>
+                            <p class="resource-author">at Hyphora</p>
+                            <p class="resource-description">A focused 45-minute session to quickly master machine learning concepts with Libra.</p>
+                            <div class="webinar-status">
+                                <span class="status-badge quick">Quick Session</span>
+                            </div>
+                            <a href="https://zmurl.com/hyphora-libra" target="_blank" class="resource-link">Join Webinar</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Step 4: Other Resources -->
+            <section class="tutorial-step" data-step="4">
+                <div class="step-header">
+                    <h2>Other Resources</h2>
+                    <span class="step-badge">Recognition & Awards</span>
+                </div>
+                <div class="step-content">
+                    <p class="section-intro">Discover additional recognition and achievements that highlight Libra's impact in the machine learning community.</p>
+                    <div class="achievement-section">
+                        <div class="achievement-card" data-type="award">
+                            <div class="achievement-icon">🏆</div>
+                            <div class="achievement-content">
+                                <h3>#1 Trending Project on Made with ML</h3>
+                                <p class="achievement-period">August Recognition</p>
+                                <p class="achievement-description">Libra achieved the top trending position on Made with ML, showcasing its popularity and impact in the machine learning community.</p>
+                                <a href="https://madewithml.com/projects/2122/libra/" target="_blank" class="resource-link">View Recognition</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="completion-section">
+                        <h3>🎉 Tutorial Complete!</h3>
+                        <p>You've successfully explored all the amazing resources about Libra. Here's what you've discovered:</p>
+                        <ul class="completion-summary">
+                            <li>3 comprehensive video tutorials to get you started</li>
+                            <li>10 in-depth articles covering various aspects of Libra</li>
+                            <li>2 interactive webinars for hands-on learning</li>
+                            <li>Recognition as a trending project in the ML community</li>
+                        </ul>
+                        <div class="next-steps">
+                            <h4>What's Next?</h4>
+                            <p>Ready to start your machine learning journey with Libra? Check out the bookmarked resources you saved during this tutorial!</p>
+                            <button class="action-btn" id="viewBookmarks">View My Bookmarks</button>
+                            <button class="action-btn secondary" id="restartTutorial">Restart Tutorial</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bookmarks Panel -->
+        <aside class="bookmarks-panel" id="bookmarksPanel">
+            <div class="bookmarks-header">
+                <h3>My Bookmarks</h3>
+                <button class="close-btn" id="closeBookmarks">×</button>
+            </div>
+            <div class="bookmarks-content" id="bookmarksContent">
+                <p class="empty-bookmarks">No bookmarks yet. Click the ⭐ button on any resource to save it!</p>
+            </div>
+        </aside>
+    </div>
+
+    <script src="tutorial.js"></script>
+</body>
+</html>
+
