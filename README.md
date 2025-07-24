@@ -100,28 +100,93 @@ print("Classification scores:", list(classification_model['scores'].keys()))
 # Output: ['recall_score', 'precision_score', 'f1_score']
 ```
 
-### Complete Workflow Example
+### Complete Workflow Walkthrough
 
-Here's a complete example using the California housing dataset:
+Here's a comprehensive walkthrough showing the complete Libra workflow with multiple query types:
+
+#### Step 1: Dataset Loading
+
+Start by loading your dataset and creating a client object:
 
 ```python
 from libra import client
 
-# Step 1: Initialize client with dataset
+# Load the California housing dataset
 newClient = client('housing.csv')
+print("Dataset loaded successfully!")
+```
 
-# Step 2: Run different types of queries
+#### Step 2: Multiple Query Types
+
+Libra supports various query types for different machine learning approaches:
+
+```python
+# Neural Network Query (automatically chooses regression/classification)
 newClient.neural_network_query('predict median house value')  # Regression
 newClient.neural_network_query('predict ocean proximity')     # Classification
 
-# Step 3: Analyze model performance
-newClient.analyze(model='regression_ANN')
-newClient.analyze(model='classification_ANN')
+# Specific Neural Network Queries
+newClient.regression_query_ann('predict median house value')
+newClient.classification_query_ann('predict ocean proximity')
 
-# Step 4: Get comprehensive results
-results = newClient.info()
-print(f"Models trained: {len(newClient.models)}")
-print(f"Available information: {list(results.keys())}")
+# Support Vector Machine Query
+newClient.svm_query('predict ocean proximity')
+
+print("All models trained successfully!")
+```
+
+#### Step 3: Accessing the Models Dictionary
+
+All trained models are stored in the client's models dictionary:
+
+```python
+# View all available models
+print("Available models:", list(newClient.models.keys()))
+# Output: ['regression_ANN', 'classification_ANN', 'svm']
+
+# Access specific model information
+regression_model = newClient.models['regression_ANN']
+classification_model = newClient.models['classification_ANN']
+svm_model = newClient.models['svm']
+
+print("Regression model keys:", list(regression_model.keys()))
+print("Classification model keys:", list(classification_model.keys()))
+print("SVM model keys:", list(svm_model.keys()))
+```
+
+#### Step 4: Model Evaluation with analyze()
+
+Use the analyze() function to evaluate each model's performance:
+
+```python
+# Analyze regression model
+newClient.analyze(model='regression_ANN')
+print("Regression analysis complete - MSE and MAE metrics added")
+
+# Analyze classification model
+newClient.analyze(model='classification_ANN')
+print("Classification analysis complete - ROC curve, confusion matrix, and scores added")
+
+# Analyze SVM model
+newClient.analyze(model='svm')
+print("SVM analysis complete - performance metrics and plots generated")
+```
+
+#### Step 5: Retrieving Comprehensive Results
+
+Get all information about your models and results:
+
+```python
+# Get comprehensive information about all models
+comprehensive_results = newClient.info()
+
+print("Comprehensive results structure:")
+print("Available information:", list(comprehensive_results.keys()))
+print(f"Total models trained: {len(newClient.models)}")
+
+# Access specific model performance metrics
+for model_name in newClient.models.keys():
+    print(f"
 ```
 
 ## Video Tutorials
@@ -161,6 +226,7 @@ print(f"Available information: {list(results.keys())}")
 ## Other
 
 [#1 Trending Project on Made with ML in August](https://madewithml.com/projects/2122/libra/)
+
 
 
 
