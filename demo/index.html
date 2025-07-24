@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libra - Machine Learning in One Line</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Libra</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#examples" class="nav-link">Examples</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#resources" class="nav-link">Resources</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Machine Learning in <span class="highlight">One Line</span></h1>
+                <p class="hero-subtitle">
+                    Libra is a Python tool for fully automated machine learning that enables you to create 
+                    complex ML models with just one line of code. No more complex configurations, 
+                    hyperparameter tuning, or model selection headaches.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('examples')">Try Examples</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('resources')">Learn More</button>
+                </div>
+            </div>
+            <div class="hero-code">
+                <div class="code-window">
+                    <div class="code-header">
+                        <span class="code-title">Quick Start</span>
+                        <button class="copy-btn" onclick="copyCode('hero-code')">Copy</button>
+                    </div>
+                    <pre><code id="hero-code" class="language-python">from libra import client
+
+# Create and train a model in one line
+newClient = client('data.csv')
+newClient.neural_network_query('target_column')</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Code Examples -->
+    <section id="examples" class="examples">
+        <div class="container">
+            <h2 class="section-title">Interactive Code Examples</h2>
+            <p class="section-subtitle">Explore different machine learning tasks with Libra's one-line approach</p>
+            
+            <div class="example-tabs">
+                <button class="tab-btn active" onclick="showExample('classification')">Classification</button>
+                <button class="tab-btn" onclick="showExample('regression')">Regression</button>
+                <button class="tab-btn" onclick="showExample('neural-network')">Neural Networks</button>
+                <button class="tab-btn" onclick="showExample('clustering')">Clustering</button>
+            </div>
+
+            <div class="example-content">
+                <div id="classification" class="example-tab active">
+                    <h3>Binary Classification</h3>
+                    <p>Predict binary outcomes with automated model selection and hyperparameter tuning.</p>
+                    <div class="code-example">
+                        <div class="code-header">
+                            <span class="code-title">classification_example.py</span>
+                            <button class="copy-btn" onclick="copyCode('classification-code')">Copy</button>
+                        </div>
+                        <pre><code id="classification-code" class="language-python">from libra import client
+
+# Load your dataset and create a classification model
+newClient = client('customer_data.csv')
+newClient.classification_query_neural_network('will_purchase')
+
+# That's it! Libra handles:
+# - Data preprocessing
+# - Feature engineering
+# - Model selection
+# - Hyperparameter optimization
+# - Cross-validation</code></pre>
+                    </div>
+                </div>
+
+                <div id="regression" class="example-tab">
+                    <h3>Regression Analysis</h3>
+                    <p>Predict continuous values with automated feature selection and model optimization.</p>
+                    <div class="code-example">
+                        <div class="code-header">
+                            <span class="code-title">regression_example.py</span>
+                            <button class="copy-btn" onclick="copyCode('regression-code')">Copy</button>
+                        </div>
+                        <pre><code id="regression-code" class="language-python">from libra import client
+
+# Predict house prices with regression
+newClient = client('housing_data.csv')
+newClient.regression_query_neural_network('price')
+
+# Automatically handles:
+# - Missing value imputation
+# - Feature scaling
+# - Model architecture selection
+# - Performance evaluation</code></pre>
+                    </div>
+                </div>
+
+                <div id="neural-network" class="example-tab">
+                    <h3>Deep Neural Networks</h3>
+                    <p>Build sophisticated neural networks without writing complex architectures.</p>
+                    <div class="code-example">
+                        <div class="code-header">
+                            <span class="code-title">neural_network_example.py</span>
+                            <button class="copy-btn" onclick="copyCode('neural-network-code')">Copy</button>
+                        </div>
+                        <pre><code id="neural-network-code" class="language-python">from libra import client
+
+# Create a deep neural network for image classification
+newClient = client('image_dataset/')
+newClient.neural_network_query('image_labels')
+
+# Libra automatically:
+# - Designs optimal network architecture
+# - Selects appropriate activation functions
+# - Implements regularization techniques
+# - Monitors training progress</code></pre>
+                    </div>
+                </div>
+
+                <div id="clustering" class="example-tab">
+                    <h3>Unsupervised Learning</h3>
+                    <p>Discover patterns in your data with automated clustering algorithms.</p>
+                    <div class="code-example">
+                        <div class="code-header">
+                            <span class="code-title">clustering_example.py</span>
+                            <button class="copy-btn" onclick="copyCode('clustering-code')">Copy</button>
+                        </div>
+                        <pre><code id="clustering-code" class="language-python">from libra import client
+
+# Perform customer segmentation
+newClient = client('customer_behavior.csv')
+newClient.kmeans_clustering_query()
+
+# Automatically determines:
+# - Optimal number of clusters
+# - Feature importance
+# - Cluster characteristics
+# - Visualization of results</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Libra?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Automated Model Selection</h3>
+                    <p>Libra automatically selects the best machine learning algorithm for your specific dataset and problem type, eliminating guesswork.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>One-Line Simplicity</h3>
+                    <p>Create complex ML models with just one line of code. No need to write hundreds of lines for data preprocessing and model configuration.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Multiple ML Tasks</h3>
+                    <p>Support for classification, regression, neural networks, clustering, and more. One library for all your machine learning needs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔧</div>
+                    <h3>Auto Hyperparameter Tuning</h3>
+                    <p>Automatically optimizes hyperparameters using advanced techniques like Bayesian optimization and grid search.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Built-in Data Processing</h3>
+                    <p>Handles missing values, feature scaling, encoding, and other preprocessing tasks automatically.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3>Performance Visualization</h3>
+                    <p>Generates comprehensive performance reports and visualizations to help you understand your model's behavior.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="resources">
+        <div class="container">
+            <h2 class="section-title">Learn More About Libra</h2>
+            <p class="section-subtitle">Explore tutorials, articles, and other resources from the community</p>
+            
+            <div class="resources-grid">
+                <div class="resource-category">
+                    <h3>📹 Video Tutorials</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.youtube.com/watch?v=N_T_ljj5vc4" target="_blank">Machine Learning in One Line of Code</a> <span class="author">by Ahmad Bazzi</span></li>
+                        <li><a href="https://www.youtube.com/watch?v=kQrIrm1XKc0&t=4s" target="_blank">Introduction to Machine Learning using Libra</a> <span class="author">by Palash Shah</span></li>
+                        <li><a href="https://www.youtube.com/watch?v=2149kjp97KI&t=407s" target="_blank">Libra - Your Data Talks Meetup</a> <span class="author">by Palash Shah</span></li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <h3>📝 Articles & Tutorials</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://towardsdatascience.com/machine-learning-and-deep-learning-in-one-liner-using-libra-7eef4023618f" target="_blank">One liner Machine learning and Deep Learning using Libra</a> <span class="author">by Ali Aryan</span></li>
+                        <li><a href="https://towardsdatascience.com/create-a-complex-machine-learning-model-in-one-line-with-libra-a253e05d15a1" target="_blank">Create a complex Machine Learning model in one line with Libra</a> <span class="author">by Cornellius Yudha Wijaya</span></li>
+                        <li><a href="https://medium.com/@gagan.2492/fully-automated-machine-learning-in-one-liners-5925ba994b48" target="_blank">Fully Automated Machine Learning in One-Liners</a> <span class="author">by Gagandeep Singh</span></li>
+                        <li><a href="https://medium.com/@pranavnt5/machine-learning-in-one-minute-with-libra-783dcd393f7f" target="_blank">Machine Learning in One-Minute with Libra</a> <span class="author">by Pranav Teegavarapu</span></li>
+                        <li><a href="https://www.machinelearningmadeeasy.com/libra" target="_blank">Create a neural network in one-line of code</a> <span class="author">by Siddhant Chadha</span></li>
+                    </ul>
+                </div>
+
+                <div class="resource-category">
+                    <h3>🎓 Webinars & Events</h3>
+                    <ul class="resource-list">
+                        <li><a href="https://www.meetup.com/Cloud-Computing-AI-Big-Data-and-Machine-Learning/events/272040486/" target="_blank">Become a machine learning expert</a> <span class="author">at Cloud Computing, AI, Big Data</span></li>
+                        <li><a href="https://zmurl.com/hyphora-libra" target="_blank">Become a machine learning expert in 45 minutes</a> <span class="author">at Hyphora</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Libra Interactive Demo. Built to showcase the power of automated machine learning.</p>
+            <p>Explore the <a href="../README.md">awesome-libra</a> repository for more resources.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
