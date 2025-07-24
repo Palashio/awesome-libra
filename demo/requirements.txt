@@ -1,0 +1,15 @@
+# Libra Interactive Demo Requirements
+# Install with: pip install -r requirements.txt
+
+# Core ML library
+libra>=1.0.0
+
+# Data manipulation and analysis
+pandas>=1.3.0
+numpy>=1.21.0
+
+# Visualization
+matplotlib>=3.4.0
+seaborn>=0.11.0
+
+# Interactive development (optional but recommended)
