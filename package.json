@@ -1,0 +1,36 @@
+{
+  "name": "typescript-interactive-tutorial",
+  "version": "1.0.0",
+  "description": "An interactive TypeScript coding tutorial with hands-on exercises and lessons",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "typescript",
+    "tutorial",
+    "interactive",
+    "coding",
+    "education",
+    "learning"
+  ],
+  "author": "TypeScript Tutorial",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.10.0",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0",
+    "@types/readline-sync": "^1.4.8"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+
