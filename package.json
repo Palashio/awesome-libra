@@ -1,0 +1,37 @@
+{
+  "name": "typescript-interactive-tutorial",
+  "version": "1.0.0",
+  "description": "An interactive TypeScript coding tutorial with web-based interface",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts",
+    "watch": "tsc --watch",
+    "serve": "npm run build && npm start"
+  },
+  "keywords": [
+    "typescript",
+    "tutorial",
+    "interactive",
+    "education",
+    "coding"
+  ],
+  "author": "Interactive Tutorial Creator",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/express": "^4.17.17",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "@types/cors": "^2.8.13"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+
