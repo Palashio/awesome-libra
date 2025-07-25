@@ -1,0 +1,29 @@
+{
+  "name": "typescript-interactive-tutorial",
+  "version": "1.0.0",
+  "description": "An interactive TypeScript coding tutorial with step-by-step lessons and exercises",
+  "main": "dist/tutorial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "typescript",
+    "tutorial",
+    "interactive",
+    "learning",
+    "coding",
+    "education"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "nodemon": "^3.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "inquirer": "^9.0.0"
+  }
+}
+
