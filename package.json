@@ -1,0 +1,26 @@
+{
+  "name": "awesome-libra-demo",
+  "version": "1.0.0",
+  "description": "Interactive TypeScript demo for browsing awesome-libra resources",
+  "main": "dist/demo.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/demo.ts",
+    "dev": "ts-node --watch src/demo.ts"
+  },
+  "keywords": ["libra", "machine-learning", "demo", "interactive"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0"
+  },
+  "dependencies": {
+    "inquirer": "^9.2.0",
+    "@types/inquirer": "^9.0.0",
+    "chalk": "^5.3.0",
+    "open": "^9.1.0"
+  }
+}
+
