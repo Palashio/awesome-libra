@@ -1,0 +1,33 @@
+{
+  "name": "typescript-interactive-tutorial",
+  "version": "1.0.0",
+  "description": "An interactive TypeScript coding tutorial with web-based interface",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc && npm run bundle",
+    "bundle": "webpack --mode production",
+    "dev": "webpack serve --mode development --open",
+    "start": "npm run build && npm run serve",
+    "serve": "http-server dist -p 8080",
+    "clean": "rm -rf dist/*"
+  },
+  "keywords": [
+    "typescript",
+    "tutorial",
+    "interactive",
+    "education",
+    "coding"
+  ],
+  "author": "TypeScript Tutorial",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "webpack": "^5.88.0",
+    "webpack-cli": "^5.1.0",
+    "webpack-dev-server": "^4.15.0",
+    "ts-loader": "^9.4.0",
+    "html-webpack-plugin": "^5.5.0",
+    "http-server": "^14.1.0"
+  }
+}
+
