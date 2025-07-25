@@ -160,12 +160,12 @@ class InteractiveSession(cmd.Cmd):
                     break
                 lines.append(line)
             except (EOFError, KeyboardInterrupt):
-                print("
+                print("\n🚫 Multi-line input cancelled.")
                 return
         
         if lines:
-            code = '
-            print(f"🚀 Executing multi-line code:
+            code = '\n'.join(lines)
+            print(f"🚀 Executing multi-line code:\n{code}\n")
             self.execute_python_code(code)
     
     def do_history(self, line):
@@ -204,5 +204,4 @@ class InteractiveSession(cmd.Cmd):
         """Handle Ctrl+D to exit."""
         print()
         return self.do_quit(line)
-
 
