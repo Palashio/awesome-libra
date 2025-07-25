@@ -190,6 +190,46 @@ class InteractiveSession(cmd.Cmd):
         os.system('clear' if os.name == 'posix' else 'cls')
         print(self.intro)
     
+    def do_save(self, line):
+        """Save current session to a file: save <filename>"""
+        if not line.strip():
+            print("Usage: save <filename>")
+            return
+        
+        filename = line.strip()
+        if not filename.endswith('.json'):
+            filename += '.json'
+        
+        try:
+            with open(filename, 'w') as f:
+                json.dump(self.session_data, f, indent=2)
+            print(f"💾 Session saved to {filename}")
+        except Exception as e:
+            print(f"🔴 Error saving session: {e}")
+    
+    def do_load(self, line):
+        """Load a saved session from a file: load <filename>"""
+        if not line.strip():
+            print("Usage: load <filename>")
+            return
+        
+        filename = line.strip()
+        if not filename.endswith('.json'):
+            filename += '.json'
+        
+        try:
+            with open(filename, 'r') as f:
+                loaded_data = json.load(f)
+            
+            print(f"📂 Loading session from {filename}")
+            print(f"Session created: {loaded_data.get('timestamp', 'Unknown')}")
+            print(f"Commands in session: {len(loaded_data.get('commands', []))}")
+            
+        except FileNotFoundError:
+            print(f"🔴 File {filename} not found.")
+        except Exception as e:
+            print(f"🔴 Error loading session: {e}")
+    
     def do_quit(self, line):
         """Exit the interactive session."""
         print("👋 Goodbye! Thanks for using the Interactive Python Session!")
@@ -204,4 +244,5 @@ class InteractiveSession(cmd.Cmd):
         """Handle Ctrl+D to exit."""
         print()
         return self.do_quit(line)
+
 
